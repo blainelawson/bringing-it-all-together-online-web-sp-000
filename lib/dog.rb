@@ -53,4 +53,11 @@ class Dog
 
      dog = Dog.new(name: name, id: id, breed: breed)
    end
+
+   def self.find_or_create_by(id)
+     binding.pry
+     if !Dog.find_by_id(id).empty?
+    end   
+     
+   end
 end
