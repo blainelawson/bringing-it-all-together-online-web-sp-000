@@ -45,6 +45,6 @@ class Dog
         WHERE id = ?
      SQL
 binding.pry
-     Dog.new(DB[:conn].execute(sql, id)[0])
+     Dog.new(DB[:conn].execute(sql, id)[0][0])
    end
 end
