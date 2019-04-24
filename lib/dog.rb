@@ -41,7 +41,6 @@ class Dog
    end
 
    def self.find_by_id(id)
-     result_hash = {}
      sql = <<-SQL
         SELECT * FROM dogs
         WHERE id = ?
