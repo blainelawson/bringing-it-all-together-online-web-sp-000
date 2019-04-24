@@ -65,5 +65,7 @@ binding.pry
      if !dog.empty?
        dog_data = dog[0]
        dog = Dog.new(dog_data[0], dog_data[1], dog_data[2])
+     else
+       dog = self.create(name: attr_hash[:name], breed: attr_hash[:breed])
    end
 end
