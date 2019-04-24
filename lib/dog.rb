@@ -50,7 +50,7 @@ class Dog
 
      headers.collect.with_index do |header,i|
        binding.pry
-       result_hash.send(":#{header}=> #{result[i]}")
+       result_hash.send("#{header}: #{result[i]}")
         result_hash[:header] = result[i]
 
      end
