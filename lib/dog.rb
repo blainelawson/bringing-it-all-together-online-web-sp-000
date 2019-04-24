@@ -48,7 +48,9 @@ class Dog
      result = DB[:conn].execute(sql, id)[0]
      headers = DB[:conn].execute("PRAGMA table_info(dogs)").map {|col| col[1]}
 
-     result_hash = headers.collect.with_index {|header,i| "#{header}: #{result[i]}"}
+     headers.collect.with_index do |header,i| 
+       "#{header}: #{result[i]}"
+     end
      binding.pry
 
      Dog.create(result_hash)
