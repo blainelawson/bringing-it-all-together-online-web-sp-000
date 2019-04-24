@@ -69,7 +69,7 @@ class Dog
      end
    end
 
-   def self.new_from_db(attr_hash)
+   def self.new_from_db(row)
      binding.pry
    end
 end
