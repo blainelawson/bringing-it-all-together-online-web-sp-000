@@ -54,7 +54,7 @@ class Dog
 binding.pry
 
 
-     dog = Dog.new(result_hash)
+     dog = Dog.new(name: name, id: id, breed: breed)
      dog
    end
 end
