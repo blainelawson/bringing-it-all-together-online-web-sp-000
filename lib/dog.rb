@@ -47,7 +47,10 @@ class Dog
      SQL
      result = DB[:conn].execute(sql, id)[0]
      headers = DB[:conn].execute("PRAGMA table_info(dogs)").map {|col| col[1]}
-
+     id = result[0]
+     name = result[1]
+     breed = result[2]
+     
      headers.collect.with_index do |header,i|
        binding.pry
        result_hash.send("#{result_hash}[:#{header}] => #{result[i]}")
