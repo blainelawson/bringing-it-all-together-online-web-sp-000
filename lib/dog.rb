@@ -35,8 +35,6 @@ class Dog
   end
 
    def self.create(attr_hash)
-
-    #  binding.pry
      dog = Dog.new(attr_hash)
      dog.save
    end
