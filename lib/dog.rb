@@ -55,6 +55,6 @@ class Dog
      end
     #  binding.pry
 
-     Dog.create(result_hash)
+     Dog.new(result_hash)
    end
 end
