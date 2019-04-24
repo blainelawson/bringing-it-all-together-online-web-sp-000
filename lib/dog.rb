@@ -45,9 +45,10 @@ class Dog
         SELECT * FROM dogs
         WHERE id = ?
      SQL
-binding.pry
      result = DB[:conn].execute(sql, id)[0]
      headers = DB[:conn].execute("PRAGMA table_info(dogs)").map {|col| col[1]}
+     binding.pry
+
      result_hash = headers.collect.with_index {|header,i| "#{header}: #{result[i]}"}
    end
 end
