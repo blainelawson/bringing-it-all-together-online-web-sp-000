@@ -46,5 +46,7 @@ class Dog
      SQL
 binding.pry
      result = DB[:conn].execute(sql, id)[0][0]
+     headers = DB[:conn].execute("PRAGMA table_info(dogs)").map {|col| col[1]}
+     
    end
 end
