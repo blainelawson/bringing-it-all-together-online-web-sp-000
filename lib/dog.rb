@@ -7,4 +7,7 @@ class Dog
     @breed = breed
   end
 
+  def create_table
+  end
+
 end
