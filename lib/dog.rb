@@ -52,10 +52,6 @@ class Dog
      name = result[1]
      breed = result[2]
 
-binding.pry
-
-
      dog = Dog.new(name: name, id: id, breed: breed)
-     dog
    end
 end
