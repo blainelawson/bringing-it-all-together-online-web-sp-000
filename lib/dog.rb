@@ -82,6 +82,6 @@ class Dog
      Dog.new_from_db(DB[:conn].execute(sql, name)[0])
    end
 
-   def self.update
+   def update
    end
 end
