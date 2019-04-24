@@ -14,7 +14,7 @@ class Dog
         name TEXT,
         breed TEXT
       )
-      SQL
+    SQL
   end
 
 end
