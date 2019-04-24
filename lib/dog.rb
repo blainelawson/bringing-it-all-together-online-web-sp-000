@@ -38,4 +38,7 @@ class Dog
      dog = Dog.new(attr_hash)
      dog.save
    end
+
+   def find_by_id(id)
+   end
 end
