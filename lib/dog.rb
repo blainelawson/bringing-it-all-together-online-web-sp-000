@@ -60,6 +60,6 @@ class Dog
         WHERE name = ? AND breed = ?
      SQL
 binding.pry
-     DB[:conn].execute(sql, attr_hash[:name], attr_hash[:breed])
+     dog = DB[:conn].execute(sql, attr_hash[:name], attr_hash[:breed])
    end
 end
