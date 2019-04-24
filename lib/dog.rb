@@ -52,7 +52,7 @@ class Dog
       #  binding.pry
         result_hash[header] = result[i]
      end
-     binding.pry
+    #  binding.pry
 
      Dog.create(result_hash)
    end
