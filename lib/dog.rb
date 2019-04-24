@@ -40,6 +40,7 @@ class Dog
    end
 
    def self.find_by_id(id)
+     result_hash = {}
      sql = <<-SQL
         SELECT * FROM dogs
         WHERE id = ?
@@ -47,6 +48,6 @@ class Dog
 binding.pry
      result = DB[:conn].execute(sql, id)[0][0]
      headers = DB[:conn].execute("PRAGMA table_info(dogs)").map {|col| col[1]}
-
+     result_hash
    end
 end
