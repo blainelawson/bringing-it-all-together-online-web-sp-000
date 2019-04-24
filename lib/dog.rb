@@ -39,6 +39,5 @@ class Dog
     #  binding.pry
      dog = Dog.new(attr_hash)
      dog.save
-    #  dog
    end
 end
