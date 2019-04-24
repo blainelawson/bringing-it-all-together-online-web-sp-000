@@ -48,7 +48,7 @@ class Dog
      result = DB[:conn].execute(sql, id)[0]
      headers = DB[:conn].execute("PRAGMA table_info(dogs)").map {|col| col[1]}
 
-     headers.collect.with_index do |header,i| 
+     headers.collect.with_index do |header,i|
        "#{header}: #{result[i]}"
      end
      binding.pry
