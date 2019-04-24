@@ -54,7 +54,7 @@ class Dog
      dog = Dog.new(name: name, id: id, breed: breed)
    end
 
-   def self.find_or_create_by(id)
+   def self.find_or_create_by(attr_hash)
      binding.pry
      if !Dog.find_by_id(id).empty?
     end
