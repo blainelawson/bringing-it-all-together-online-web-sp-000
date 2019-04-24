@@ -59,7 +59,7 @@ class Dog
         SELECT * FROM dogs
         WHERE name = ? AND breed = ?
      SQL
-binding.pry
+# binding.pry
      dog = DB[:conn].execute(sql, attr_hash[:name], attr_hash[:breed])
 
      if !dog.empty?
