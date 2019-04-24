@@ -33,4 +33,7 @@ class Dog
 
     self
   end
+
+   def create(attr_hash)
+   end
 end
