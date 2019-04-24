@@ -57,7 +57,7 @@ class Dog
    def self.find_or_create_by(id)
      binding.pry
      if !Dog.find_by_id(id).empty?
-    end   
-     
+    end
+
    end
 end
