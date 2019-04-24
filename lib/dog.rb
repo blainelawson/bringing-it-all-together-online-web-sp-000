@@ -59,15 +59,16 @@ class Dog
         SELECT * FROM dogs
         WHERE name = ? AND breed = ?
      SQL
-# binding.pry
      dog = DB[:conn].execute(sql, attr_hash[:name], attr_hash[:breed])
 
      if !dog.empty?
        dog_data = dog[0]
-      #  binding.pry
        dog = Dog.new(id: dog_data[0], name: dog_data[1], breed: dog_data[2])
      else
        dog = self.create(name: attr_hash[:name], breed: attr_hash[:breed])
      end
+   end
+
+   def self.new_from_db
    end
 end
