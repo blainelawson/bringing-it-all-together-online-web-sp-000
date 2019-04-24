@@ -35,6 +35,8 @@ class Dog
   end
 
    def self.create(attr_hash)
+     
      binding.pry
+     dog = Dog.new(attr_hash.each {|k,v| self.send("#{k}=",v)})
    end
 end
