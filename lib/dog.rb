@@ -50,5 +50,6 @@ class Dog
      binding.pry
 
      result_hash = headers.collect.with_index {|header,i| "#{header}: #{result[i]}"}
+     Dog.create(result_hash)
    end
 end
