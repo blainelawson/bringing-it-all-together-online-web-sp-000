@@ -24,5 +24,9 @@ class Dog
   end
 
   def save
+    sql = "INSERT INTO dogs (name, breed) VALUES (?, ?)"
+    DB[:conn].execute(sql, self.name, self.breed)
+
+    self.id = DB[:conn].execute("SELECT id FROM dogs WHERE name = ?", self.name)
   end
 end
