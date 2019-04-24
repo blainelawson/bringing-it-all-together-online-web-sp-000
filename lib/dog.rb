@@ -60,7 +60,7 @@ class Dog
     #     SELECT * FROM dogs
     #     WHERE name = ?, breed = ?
     #  SQL
-    # 
+    #
     #  DB[:conn].execute
     #  if !Dog.find_by_id(id).empty?
     # end
