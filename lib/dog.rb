@@ -44,7 +44,7 @@ class Dog
         SELECT * FROM dogs
         WHERE id = ?
      SQL
-
+binding.pry
      Dog.new(DB[:conn].execute(sql, id)[0])
    end
 end
