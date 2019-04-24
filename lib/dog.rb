@@ -54,6 +54,7 @@ class Dog
      end
     #  binding.pry
 
-     Dog.new(result_hash)
+     dog = Dog.new(result_hash)
+     dog
    end
 end
